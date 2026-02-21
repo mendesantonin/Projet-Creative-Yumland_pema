@@ -21,8 +21,9 @@ body {
     color: #102A43;
     line-height: 1.6;
     background-image: url("fondaccueil.png");
-    background-repeat: repeat;
-    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-size: 2600px;
+    background-position: center center;
     background-attachment: fixed;
 }
 
