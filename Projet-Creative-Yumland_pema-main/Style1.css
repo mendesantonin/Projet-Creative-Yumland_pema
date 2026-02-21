@@ -1,0 +1,581 @@
+
+/*
+   =========================
+   RESET
+   =========================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+   =========================
+   BASE
+   =========================
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    color: #102A43;
+    line-height: 1.6;
+    background-image: url("fondaccueil.png");
+    background-repeat: repeat;
+    background-size: 1000px;
+    background-attachment: fixed;
+}
+
+/*
+
+/* =========================
+   CADRE TRANSPARENT ACCUEIL
+   ========================= 
+ */
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.85); /* blanc transparent */
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1500px;
+    margin: auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*
+   =========================
+   HEADER
+   =========================
+*/
+
+header {
+    background-color: #005734;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/*
+   =========================
+   NAVIGATION
+   =========================
+*/
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Liens */
+a:link {
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/*
+   =========================
+   CONTENU
+   =========================
+*/
+main {
+    padding: 30px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #005734;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #005734;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.accroche {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*
+   =========================
+   RECHERCHE
+   =========================
+*/
+input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid #005734;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+/*
+   =========================
+   PLATS
+   =========================
+*/
+/* Police apocalyptique (à ajouter en haut du fichier CSS) */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+/* Style général pour les cartes de plats */
+.plats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.plat {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 3px solid #005734;
+    border-radius: 12px;
+    padding: 15px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.plat:hover {
+    transform: scale(1.03);
+}
+
+.plat h3 {
+    font-family: 'Black Ops One', cursive;
+    color: #005734;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Style pour les images des plats */
+.image-plat {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #005734;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Style pour la liste des ingrédients */
+.ingredients {
+    list-style: none;
+    text-align: left;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.ingredients li {
+    color: #005734;
+    margin: 5px 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Black Ops One', cursive;
+}
+
+/* Effet de fond pour le cadre transparent */
+.overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1500px;
+    margin: auto;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
+}
+
+/*
+   =========================
+   FORMULAIRES
+   =========================
+*/
+form {
+    max-width: 450px;
+    margin: auto;
+    background-color: #F9FAFB;
+    border: 2px solid #2ECC71;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #BCCCDC;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2ECC71;
+    box-shadow: 0 0 4px rgba(46, 204, 113, 0.5);
+}
+
+/* Bouton */
+input[type="submit"] {
+    margin-top: 20px;
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #27AE60;
+}
+
+/*
+   =========================
+   FOOTER
+   =========================
+*/
+footer {
+    background-color: #0B1C2D;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+/*
+   =========================
+   RESPONSIVE
+   =========================
+*/
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .plats {
+        gap: 30px;
+    }
+
+    .plat {
+        width: 100%;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+/*
+   =========================
+   ADMINISTRATION
+   =========================
+*/
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #BCCCDC;
+}
+
+.admin-table th {
+    background-color: #005734;
+    color: white;
+    font-weight: bold;
+}
+
+.admin-table tr:hover {
+    background-color: #E6F4EA;
+}
+
+.btn-admin {
+    background-color: #2ECC71;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.btn-admin:hover {
+    background-color: #27AE60;
+}
+
+.admin-label {
+    font-weight: bold;
+    color: #005734;
+}
+
+/*
+   =========================
+   COMMANDES
+   =========================
+*/
+
+.commandes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.commandes-table th,
+.commandes-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #BCCCDC;
+}
+
+.commandes-table th {
+    background-color: #005734;
+    color: white;
+    font-weight: bold;
+}
+
+.commandes-table tr:hover {
+    background-color: #E6F4EA;
+}
+
+/* Statuts */
+.status {
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.status.waiting {
+    background-color: #F1C40F;
+    color: #5C3D00;
+}
+
+.status.delivery {
+    background-color: #3498DB;
+    color: white;
+}
+
+/*
+   =========================
+   LIVRAISON (MOBILE)
+   =========================
+*/
+
+.livraison-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 3px solid #005734;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+.livraison-card p {
+    margin-bottom: 12px;
+}
+
+/* Boutons livraison */
+.livraison-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-livraison {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* GPS */
+.btn-livraison.nav {
+    background-color: #3498DB;
+}
+
+.btn-livraison.nav:hover {
+    background-color: #2C80B4;
+}
+
+/* Livraison terminée */
+.btn-livraison.success {
+    background-color: #2ECC71;
+}
+
+.btn-livraison.success:hover {
+    background-color: #27AE60;
+}
+
+/* Optimisation mobile */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .livraison-card {
+        padding: 15px;
+        font-size: 1em;
+    }
+}
+
+/*
+   =========================
+   AVIS / NOTATION
+   =========================
+*/
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #BCCCDC;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+select:focus {
+    outline: none;
+    border-color: #2ECC71;
+    box-shadow: 0 0 4px rgba(46, 204, 113, 0.5);
+}
+
+.accroche {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/*
+   =========================
+   CARTE / PRODUITS
+   =========================
+*/
+
+.filtres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.filtre {
+    background-color: white;
+    border: 2px solid #005734;
+    color: #005734;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filtre.actif,
+.filtre:hover {
+    background-color: #005734;
+    color: white;
+}
+
+.prix {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #005734;
+}
+
+/*
+   =========================
+   AVIS CLIENTS
+   =========================
+*/
+
+.avis-section {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1500px;
+    margin: 40px auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.avis-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.avis-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.avis-card:hover {
+    transform: translateY(-5px);
+}
+
+.avis-card h3 {
+    color: #F1C40F;
+    margin-bottom: 10px;
+}
+
+
