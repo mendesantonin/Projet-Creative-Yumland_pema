@@ -1,20 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-/*
-   =========================
-   RESET
-   =========================
-*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*
-   =========================
-   BASE
-   =========================
-*/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FFFFFF;
@@ -27,12 +19,7 @@ body {
     background-attachment: fixed;
 }
 
-/*
 
-/* =========================
-   CADRE TRANSPARENT ACCUEIL
-   ========================= 
- */
 
 .overlay {
     background-color: rgba(255, 255, 255, 0.85); /* blanc transparent */
@@ -43,11 +30,7 @@ body {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/*
-   =========================
-   HEADER
-   =========================
-*/
+
 
 header {
     background-color: #005734;
@@ -61,11 +44,7 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/*
-   =========================
-   NAVIGATION
-   =========================
-*/
+
 nav {
     text-align: center;
 }
@@ -76,7 +55,7 @@ nav a {
     font-weight: bold;
 }
 
-/* Liens */
+
 a:link {
     color: #FFFFFF;
 }
@@ -90,11 +69,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/*
-   =========================
-   CONTENU
-   =========================
-*/
+
 main {
     padding: 30px;
 }
@@ -117,11 +92,7 @@ main {
     margin-bottom: 30px;
 }
 
-/*
-   =========================
-   RECHERCHE
-   =========================
-*/
+
 input[type="text"] {
     width: 100%;
     max-width: 300px;
@@ -132,15 +103,10 @@ input[type="text"] {
     margin-left: 30px;
 }
 
-/*
-   =========================
-   PLATS
-   =========================
-*/
-/* Police apocalyptique (à ajouter en haut du fichier CSS) */
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-/* Style général pour les cartes de plats */
+
+
+
 .plats {
     display: flex;
     justify-content: center;
@@ -170,9 +136,9 @@ input[type="text"] {
     font-size: 1.8em;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    text-decoration: underline;
 }
 
-/* Style pour les images des plats */
 .image-plat {
     width: 100%;
     height: 300px;
@@ -183,7 +149,7 @@ input[type="text"] {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
 }
 
-/* Style pour la liste des ingrédients */
+
 .ingredients {
     list-style: none;
     text-align: left;
@@ -201,22 +167,8 @@ input[type="text"] {
     font-family: 'Black Ops One', cursive;
 }
 
-/* Effet de fond pour le cadre transparent */
-.overlay {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 1500px;
-    margin: auto;
-    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
-}
 
 
-/*
-   =========================
-   FOOTER
-   =========================
-*/
 footer {
     background-color: #0B1C2D;
     color: white;
@@ -226,11 +178,7 @@ footer {
     margin-bottom: 5px;
 }
 
-/*
-   =========================
-   RESPONSIVE
-   =========================
-*/
+
 @media (max-width: 600px) {
     main {
         padding: 15px;
@@ -254,11 +202,7 @@ footer {
     }
 }
 
-/*
-   =========================
-   ADMINISTRATION
-   =========================
-*/
+
 
 .admin-table {
     width: 100%;
@@ -305,11 +249,7 @@ footer {
     color: #005734;
 }
 
-/*
-   =========================
-   COMMANDES
-   =========================
-*/
+
 
 .commandes-table {
     width: 100%;
@@ -337,7 +277,7 @@ footer {
     background-color: #E6F4EA;
 }
 
-/* Statuts */
+
 .status {
     font-weight: bold;
     padding: 6px 10px;
@@ -355,11 +295,7 @@ footer {
     color: white;
 }
 
-/*
-   =========================
-   LIVRAISON (MOBILE)
-   =========================
-*/
+
 
 .livraison-card {
     background-color: rgba(255, 255, 255, 0.95);
@@ -373,7 +309,7 @@ footer {
     margin-bottom: 12px;
 }
 
-/* Boutons livraison */
+
 .livraison-actions {
     display: flex;
     flex-direction: column;
@@ -391,7 +327,7 @@ footer {
     color: white;
 }
 
-/* GPS */
+
 .btn-livraison.nav {
     background-color: #3498DB;
 }
@@ -400,7 +336,7 @@ footer {
     background-color: #2C80B4;
 }
 
-/* Livraison terminée */
+
 .btn-livraison.success {
     background-color: #2ECC71;
 }
@@ -409,7 +345,7 @@ footer {
     background-color: #27AE60;
 }
 
-/* Optimisation mobile */
+
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.8em;
@@ -421,11 +357,7 @@ footer {
     }
 }
 
-/*
-   =========================
-   AVIS / NOTATION
-   =========================
-*/
+
 
 select {
     width: 100%;
@@ -447,11 +379,7 @@ select:focus {
     margin-bottom: 20px;
 }
 
-/*
-   =========================
-   CARTE / PRODUITS
-   =========================
-*/
+
 
 .filtres {
     display: flex;
@@ -481,13 +409,10 @@ select:focus {
     font-weight: bold;
     font-size: 1.1em;
     color: #005734;
+    text-decoration: underline;
 }
 
-/*
-   =========================
-   AVIS CLIENTS
-   =========================
-*/
+
 
 .avis-section {
     background-color: rgba(255, 255, 255, 0.85);
@@ -525,11 +450,7 @@ select:focus {
     margin-bottom: 10px;
 }
 
-/*
-   =========================
-   PAGE CONNEXION
-   =========================
-*/
+
 
 .login-main {
     display: flex;
@@ -594,11 +515,7 @@ select:focus {
 }
 
 
-/*
-   ==================
-   PAGE INSCRIPTION 
-   ==================
-*/
+
 
 .register-page {
     display: flex;
@@ -628,7 +545,7 @@ select:focus {
     gap: 18px;
 }
 
-/* Alignement parfait Nom / Prénom */
+
 .name-row {
     display: flex;
     gap: 20px;
@@ -663,7 +580,7 @@ select:focus {
     box-shadow: 0 0 6px rgba(0,87,52,0.3);
 }
 
-/* Bouton */
+
 button {
     margin-top: 10px;
     padding: 14px;
@@ -681,18 +598,14 @@ button:hover {
     background-color: #2ECC71;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
     .name-row {
         flex-direction: column;
     }
 }
 
-/*
-   =========================
-   FORMULAIRE 
-   =========================
-*/
+
 
 form {
     max-width: 700px;
@@ -706,7 +619,7 @@ form {
 
 
 
-/* Champs améliorés */
+
 form input,
 form textarea,
 form select {
@@ -718,7 +631,7 @@ form select {
     transition: all 0.3s ease;
 }
 
-/* Effet focus plus propre */
+
 form input:focus,
 form textarea:focus,
 form select:focus {
@@ -727,7 +640,7 @@ form select:focus {
     outline: none;
 }
 
-/* Bouton */
+
 form input[type="submit"] {
     margin-top: 25px;
     background-color: #005734;
