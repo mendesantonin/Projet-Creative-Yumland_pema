@@ -210,60 +210,6 @@ input[type="text"] {
     box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
 }
 
-/*
-   =========================
-   FORMULAIRES
-   =========================
-*/
-form {
-    max-width: 450px;
-    margin: auto;
-    background-color: #F9FAFB;
-    border: 2px solid #2ECC71;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 6px;
-    border: 1px solid #BCCCDC;
-    border-radius: 6px;
-    font-size: 1em;
-}
-
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: #2ECC71;
-    box-shadow: 0 0 4px rgba(46, 204, 113, 0.5);
-}
-
-/* Bouton */
-input[type="submit"] {
-    margin-top: 20px;
-    background-color: #2ECC71;
-    color: white;
-    border: none;
-    padding: 12px;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    background-color: #27AE60;
-}
 
 /*
    =========================
@@ -578,4 +524,223 @@ select:focus {
     margin-bottom: 10px;
 }
 
+/*
+   =========================
+   PAGE CONNEXION
+   =========================
+*/
 
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.login-overlay {
+    max-width: 600px;
+    width: 100%;
+}
+
+.login-section h2 {
+    text-align: center;
+    color: #005734;
+    margin-bottom: 25px;
+    font-size: 2em;
+    
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 3px solid #005734;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    margin-bottom: 15px;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    background-color: #005734;
+    font-size: 1.1em;
+    padding: 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #2ECC71;
+    transform: translateY(-2px);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #005734;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+   ==================
+   PAGE INSCRIPTION 
+   ==================
+*/
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.register-box {
+    width: 100%;
+    max-width: 750px;
+    background: rgba(255,255,255,0.95);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #005734;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.register-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #005734;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Alignement parfait Nom / Prénom */
+.name-row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #005734;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #BCCCDC;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #005734;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0,87,52,0.3);
+}
+
+/* Bouton */
+button {
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #005734;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2ECC71;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .name-row {
+        flex-direction: column;
+    }
+}
+
+/*
+   =========================
+   FORMULAIRE 
+   =========================
+*/
+
+form {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #005734;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Champs améliorés */
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #BCCCDC;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+/* Effet focus plus propre */
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #005734;
+    box-shadow: 0 0 6px rgba(0, 87, 52, 0.3);
+    outline: none;
+}
+
+/* Bouton */
+form input[type="submit"] {
+    margin-top: 25px;
+    background-color: #005734;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2ECC71;
+    transform: translateY(-2px);
+}
